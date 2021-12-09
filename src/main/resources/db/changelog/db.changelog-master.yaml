@@ -1,7 +1,7 @@
 databaseChangeLog:
   - include:
-      file: db/changelog/create-company-and-employee-schema.xml
+      file: ./create-company-and-employee-schema.xml
   - include:
-      file: db/changelog/insert-employee-data.xml
+      file: ./insert-employee-data.xml
   - include:
-      file: db/changelog/insert-company-data.xml
+      file: ./insert-company-data.xml
