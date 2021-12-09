@@ -5,3 +5,5 @@ databaseChangeLog:
       file: .//src//main//resources//db//changelog//insert-employee-data.xml
   - include:
       file: .//src//main//resources//db//changelog//insert-company-data.xml
+  - include:
+      file: .//src//main//resources//db//changelog//create-test1-schema.sql
