@@ -1,15 +1,13 @@
 --liquibase formatted sql
-				
+
 --changeset nvoxland:1
-create table test1 (  
-    id int primary key,
-    name varchar(255)  
-);  
---rollback drop table test1; 
+CREATE TABLE `inventory`.`test1` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+  
+--rollback drop table test1;   
 
---changeset nvoxland:2 
-insert into test1 (id, name) values (1, ‘name1′);
-insert into test1 (id,  name) values (2, ‘name2′);  
-
---changeset nvoxland:3 dbms:mysql
-create sequence seq_test;
+--changeset nvoxland:2   
+INSERT INTO `inventory`.`test1` (`id`, `name`) VALUES ('1', 'name1');
+INSERT INTO `inventory`.`test1` (`id`, `name`) VALUES ('2', 'name2');
